@@ -69,7 +69,7 @@ int main(int argc,char **argv)
   struct sockaddr_in sockin2;
   socklen_t taillesockin2;
   int attendResult;
-  char *message="<HTML><head>\n<title>Test</title>\n</head><body>\n<h1>Hello World !</h1></body></html>";
+  char *message="<HTML><head>\n<title>Test</title>\n</head><body>\n<h1><A HREF=\"intro.txt\">TEST CLIQUE</A>Hello World !</h1></body></html>";
   //signal(SIGPIPE, SIG_IGN);
   while(true){
     attendResult=attend(socket1);
